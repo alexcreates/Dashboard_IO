@@ -44,7 +44,7 @@ app.layout = html.Div([
 
 #        Handles Slider input 1
 #        We can handle evaluations within the return of the slider
-@appl.callback(Output('outputid1', 'children'),
+@app.callback(Output('outputid1', 'children'),
                [Input('range-slider', 'value'))
 def update_slider(value_list):
     return value_list[0] * value_list[1]
